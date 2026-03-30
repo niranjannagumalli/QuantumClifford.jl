@@ -42,6 +42,6 @@ include("d_dimensional_codes.jl")
 include("trivariate_tricycle.jl")
 include("multivariate_multicycle.jl")
 include("homological_product_codes.jl")
-include("rainbow_codes.jl")
+# include("rainbow_codes.jl")
 
 end # module

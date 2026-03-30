@@ -15,7 +15,7 @@ generator_polynomial
 export AbstractECC, AbstractQECC, AbstractCECC, AbstractCSSCode, AbstractDistanceAlg
 
 # QEC Codes
-export Perfect5, Cleve8, Gottesman
+export Perfect5, Cleve8, Gottesman, HGPRainbow
 
 # CSS Codes
 export Toric, Bitflip3, Phaseflip3, Shor9, Steane7, Surface, CSS, QuantumReedMuller, Triangular488, Triangular666,
@@ -52,6 +52,7 @@ include("codes/quantum/color_codes.jl")
 include("codes/quantum/quantumtannergraphproduct.jl")
 include("codes/quantum/tillichzemor.jl")
 include("codes/quantum/generalized_circulant_bivariate_bicycle.jl")
+include("codes/quantum/hgp_rainbow.jl")
 
 # Reed-Muller Codes
 include("codes/classical/reedmuller.jl")
@@ -62,6 +63,8 @@ include("codes/quantum/quantumreedmuller.jl")
 include("codes/quantum/delfosse_reichardt_code.jl")
 include("codes/quantum/delfosse_reichardt_repcode.jl")
 include("codes/quantum/delfosse_reichardt_823_code.jl")
+
+export GradedGraph
 
 function __init__()
     ENV["NEMO_PRINT_BANNER"] = "false"
